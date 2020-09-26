@@ -1,6 +1,8 @@
 // This shows how to use Prototypal inheritance in JavaScript
 
 var Point = {
+	x: 2,
+	y: 1,
 	init: function(x, y) {
 		this.x = x;
 		this.y = y;
@@ -18,7 +20,10 @@ var Circle = Object.create(Point);
 Circle.init = function(x, y, r) {
 	Point.init.call(this, x, y);
 	this.r = r;
+	this.x = x;
+	this.y = y;
 };
+Circle.r = 0;
 Circle.area = function () {
 	return 3.14 * this.r * this.r;
 };	
@@ -69,6 +74,10 @@ function iterateOverProperties(obj) {
 	var proto = Object.getPrototypeOf(obj);
 	console.log(proto);
 	for (e in obj) {
+		console.log("Property: " + e);
+		console.log(obj.hasOwnProperty(e));
+		console.log(typeof(obj[e]) != "function");
+		console.log(e in proto );
 		if ( ( obj.hasOwnProperty(e) ) 
 		  && ( typeof(obj[e]) != "function") 
 		  && (e in proto ) ) {
@@ -79,6 +88,10 @@ function iterateOverProperties(obj) {
 	return str;
 }
 
+//NOTE: Since all properties of Point (x, y) and Circle(r) are defined inside of the Init functions, "e in proto" always returns false for non-function properties (x, y, r).
+// Because the prototypes of c and e do not have any properties defined outside of the 'init' function
+//	This is why p, c and e below have no properties shown from the outputs of iterateOverProperties()
 console.log( "p's properties " + iterateOverProperties(p) );
 console.log( "c's properties " + iterateOverProperties(c) );
 console.log( "e's properties " + iterateOverProperties(e) );
+console.log("END");

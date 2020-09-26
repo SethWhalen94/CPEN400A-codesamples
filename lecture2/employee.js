@@ -61,7 +61,7 @@ console.log(e1 instanceof Person);
 console.log(e1 instanceof Object);
 
 console.log(p1 instanceof Employee);
-console.log(p1 instanceof Person);
+console.log(Object.getPrototypeOf(p1) instanceof Person);
 console.log(p1 instanceof Object);
 
 console.log(p2 instanceof Employee);
