@@ -1,8 +1,6 @@
 // This shows how to use Prototypal inheritance in JavaScript
 
 var Point = {
-	x: 2,
-	y: 1,
 	init: function(x, y) {
 		this.x = x;
 		this.y = y;
@@ -20,10 +18,7 @@ var Circle = Object.create(Point);
 Circle.init = function(x, y, r) {
 	Point.init.call(this, x, y);
 	this.r = r;
-	this.x = x;
-	this.y = y;
 };
-Circle.r = 0;
 Circle.area = function () {
 	return 3.14 * this.r * this.r;
 };	

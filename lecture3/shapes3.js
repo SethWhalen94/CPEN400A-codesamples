@@ -40,7 +40,7 @@ var res2 = add2.apply( Object.getPrototypeOf(p1), Points);
 console.log(res2); 
 document.writeln("Add2 of p1 and p2 = res2 = " + res2);
 
-var res3 = add2.call( Object.getPrototypeOf(p1), p1, p2 );
+var res3 = add2.apply( p1, Points);
 console.log(res3); 
 document.writeln("Add2 of p1 and p2 = res3 = " + res3);
 

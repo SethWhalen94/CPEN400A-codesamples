@@ -15,6 +15,7 @@ console.log( p1.name() );
 Person.prototype.print = function() { // this is a method of the prototype
 	console.log( this.name() + " " + this.gender );
 }
+Person.prototype.foo = "Bar";
 
 console.log(p1);
 console.log(Person.prototype);
@@ -37,6 +38,12 @@ var Employee = function(firstName, lastName, gender, title) {
 	this.title = title;	
 };
 
+var Employee2 = function(firstName, lastName, gender, title) {
+	Person.call(this, firstName, lastName, gender);
+	this.title = title;
+};
+var e2 = new Employee2("Seth", "Whalen", "Male", "Boss");
+
 Employee.prototype = new Person();
 Employee.prototype.constructor = Employee;
 
@@ -55,18 +62,33 @@ p2.print();
 
 // Employee.prototype = Object.prototype;
 
+//	Checking Person prototype property 'foo'
+console.log(Person.foo);
+console.log(Person.prototype.foo)
+//	Checking __proto__ of Person Constructor function
+console.log(Object.getPrototypeOf(Person) === Function.prototype);
+
 // Check the instances and the prototypes
+console.log(Employee.prototype);
 console.log(e1 instanceof Employee);
 console.log(e1 instanceof Person);
 console.log(e1 instanceof Object);
 
+console.log(Person.prototype)
 console.log(p1 instanceof Employee);
-console.log(Object.getPrototypeOf(p1) instanceof Person);
+console.log(Object.getPrototypeOf(p1));
 console.log(p1 instanceof Object);
 
 console.log(p2 instanceof Employee);
 console.log(p2 instanceof Person);
 console.log(p2 instanceof Object);
+
+console.log(e2);
+console.log(Employee2.prototype)
+console.log(Object.getPrototypeOf(e2) === Employee2.prototype);
+console.log(e2 instanceof Employee2);
+console.log(e2 instanceof Person);
+console.log(e2 instanceof Object);
 
 console.log( "firstName" in p1 );
 console.log( "lastName" in p1 );
