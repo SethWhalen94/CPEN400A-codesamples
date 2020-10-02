@@ -3,13 +3,18 @@
 var timeoutHandler = function(message) {
 	return function( ) {
 		alert(message);
-	}	
+	}
+}
+
+var log = function (name) {
+	alert("Hello " + name);
 }
 
 s = undefined;
 
 var setupTimeout = function( ) {
-	s = setTimeout( timeoutHandler("hello"), 5000 )
+	s = setTimeout( log, 5000, "Seth" )
+	console.log("Setup Handler");
 }
 
 var cancelTimeout = function( ) {
