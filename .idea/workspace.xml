@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c68b1bcb-2767-4cba-8754-bf8943ed7ec7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lecture4/example.js" beforeDir="false" afterPath="$PROJECT_DIR$/lecture4/example.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lecture4/timeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/lecture4/timeout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,33 +45,33 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Session_4" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.example.js">
-    <configuration name="shapes3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CPEN400A-codesamples/lecture3/shapes3.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="shapes.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CPEN400A-codesamples/lecture2/shapes.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.timeout2.js">
     <configuration name="employee.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lecture2/employee.js" working-dir="$PROJECT_DIR$/lecture2">
       <method v="2" />
     </configuration>
     <configuration name="example.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lecture4/example.js" working-dir="$PROJECT_DIR$/lecture4">
       <method v="2" />
     </configuration>
+    <configuration name="scratch_1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="timeout2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lecture4/timeout2.js" working-dir="$PROJECT_DIR$/lecture4">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.timeout2.js" />
+        <item itemvalue="Node.js.scratch_1.js" />
         <item itemvalue="Node.js.example.js" />
         <item itemvalue="Node.js.employee.js" />
         <item itemvalue="Node.js.scratch.js" />
-        <item itemvalue="JavaScript Debug.shapes3.html" />
-        <item itemvalue="JavaScript Debug.shapes.html" />
       </list>
     </recent_temporary>
   </component>
@@ -89,6 +89,9 @@
       <workItem from="1601402422506" duration="611000" />
       <workItem from="1601403402865" duration="5823000" />
       <workItem from="1601489222071" duration="4955000" />
+      <workItem from="1601834182246" duration="5619000" />
+      <workItem from="1602005484485" duration="5756000" />
+      <workItem from="1602369674292" duration="631000" />
     </task>
     <servers />
   </component>
@@ -112,26 +115,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="550" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1601171232145" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1601403286632">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1602007201810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601403286632" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1601599734090">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602007201810" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1602011378008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601599734090" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1601599734090">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602011378008" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1602011378008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601599734090" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1601599734090">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602011378008" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1602011378008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601599734090" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1601599734090">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602011378008" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1602011378008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601599734090" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602011378008" />
     <state width="936" height="344" key="GridCell.Tab.1.bottom" timestamp="1601599734058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,6 +183,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="936" height="344" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601599734059" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1601836745720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601836745720" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

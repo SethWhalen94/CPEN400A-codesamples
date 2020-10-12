@@ -2,7 +2,7 @@
 
 var invokeTimes = function(func, noTimes, time) {
 	console.log("Setting up interval " + noTimes + " " + time);
-	var count = 0;
+	var count = 0;	//	use closure to remember this variable
 	var timeoutHandler = function() {
 		// timeOutHandler is a closure
 		console.log( "invocation " + count);
