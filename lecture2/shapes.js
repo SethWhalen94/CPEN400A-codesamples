@@ -18,7 +18,7 @@ var Circle = function(x, y, r) {
 	Point.call(this, x, y);
 	this.r = r;
 	this.area = function() {
-		return 3.1412 * this.r * this.r;
+		return 3.1412 * this.r^2;
 	}
 };
 
@@ -83,8 +83,8 @@ console.log( "e instanceof Ellipse = " + (e instanceof Ellipse) );
 console.log( "e instanceof Circle = " + (e instanceof Circle) );
 console.log( "e instanceof Point = " + (e instanceof Point) );
 
-delete e.area;  // Now this reverts to circle's area
-document.writeln( "e's area (wrong!) = " + e.area() );
+//delete e.area;  // Now this reverts to circle's area
+//document.writeln( "e's area (wrong!) = " + e.area() );
 
 console.log( "p's properties " + iterateOverProperties(p) );
 console.log( "c's properties " + iterateOverProperties(c) );
