@@ -3,6 +3,8 @@
 // Does not assume length of the string being searched < length of buffer being read
 // However, it makes another assumption - can you think of what that is ?
 // HINT: Think about prefixes of strings ....
+// ASSUMES that the file does not include substrings of string
+// e.g string = hello, fileblob1 = heh, filebolb2 = ello
 
 var fs = require('fs');
 if (! fs) process.exit(1);

@@ -1,4 +1,4 @@
-// Solution to class activity on slide 39
+// Solution to class activity on slide 37
 
 var newDiv = function(node, id) {
 	var div = document.createElement("div");

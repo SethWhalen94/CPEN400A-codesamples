@@ -51,5 +51,5 @@ class MyRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
 Handler = MyRequestHandler
 server = SocketServer.TCPServer(('0.0.0.0', PORT), Handler)
-print "Starting server on port", PORT
+print ("Starting server on port", PORT)
 server.serve_forever()

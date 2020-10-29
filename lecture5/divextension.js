@@ -1,4 +1,4 @@
-// Solution to class activity in slide 34  
+// Solution to class activity in slide 32
 
 var wrapGetElementById  = function() {
 	var origGebid = document.getElementById;
