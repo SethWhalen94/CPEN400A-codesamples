@@ -3,8 +3,9 @@
 
 function* executeAsync(functions, delay) {
     for (var i=0; i<functions.length; ++i) {
-        var func = functions[i];
+
         yield new Promise( (resolve, reject) => {
+            var func = functions[i];
             var arg = i;
             setTimeout(() => { 
                 resolve( func(arg) ); 

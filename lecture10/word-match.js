@@ -20,15 +20,15 @@ function countMatches(fileName, match) {
        var wordCount = 0;
        if (! err) {
            console.log("Setting up wordMatch", data.length)
-           var wg = wordMatchGen(data, match);
-           for (w of wg) 
-                wordCount++;
+           var wg = wordMatchGen(data, match);  // Create instance of the generator
+           for (w of wg)                        // Cycle through generator items
+                wordCount++;                    // Increment count of word instance found
            console.log("Number of matches = " + wordCount);
        } else 
            console.log(err);
     });
 };
 
-countMatches("sample2.txt", "This");
+countMatches("sample2.txt", "hello");
 
 
