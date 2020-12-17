@@ -5,7 +5,7 @@ function* listIterator(items) {
     for (var i = 0; i < items.length; ++i) {
         yield( items[i] );
     }
-    return i;    // Return the number of elements iterated over
+    yield i;    // Return the number of elements iterated over
 }
 
 // List of names to iterate over
@@ -26,7 +26,7 @@ console.log("Number of elements iterated over " + l.value);
 console.log("Starting iteration method 2");
 var lg_redux = listIterator(names);
 
-// The cleaner way to do the iteration, but can't get final value
+// The cleaner way to do the iteration, but can't get return value of generator
 for (l of lg_redux) {
     console.log("Next: " + l);
 }

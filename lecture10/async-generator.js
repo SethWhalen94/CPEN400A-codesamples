@@ -18,6 +18,12 @@ var funcs = [];
 for (var i = 0; i<10; i++) {
     funcs.push( (i) => i );
 }
+
+var new1 = function (i) {
+    return "Hello from function " + i;
+}
+funcs.push(new1);
+
 var execGen = executeAsync(funcs, 1000);
 for (eg of execGen) {
     eg.then( (result) => console.log("resolved " + result) 

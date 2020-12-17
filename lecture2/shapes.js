@@ -50,7 +50,7 @@ function iterateOverProperties(obj) {
 	for (e in obj) {
 		if ( ( obj.hasOwnProperty(e) )
 		  && (e in proto )
-		&& typeof e != "function") {
+		&& ! e instanceof Function) {
 				str = str + e + " = " + obj[e] + " , ";
 		} 
 	}
@@ -63,22 +63,20 @@ var c = new Circle(20, 30, 5);
 var e = new Ellipse(5, 10, 5, 2);
 
 
-document.writeln( "Point p = " + p );
-document.writeln( "p's area = " + p.area() );
 
 console.log( Object.getPrototypeOf(p) );
 console.log( "p instanceof Point = " + (p instanceof Point) );
 console.log( "p instanceof Object = " + (p instanceof Object) );
 
-document.writeln( "Circle c = " + c );
-document.writeln( "c's area = " + c.area() );
+//document.writeln( "Circle c = " + c );
+//document.writeln( "c's area = " + c.area() );
 console.log( Object.getPrototypeOf(c) );
 console.log( "p instanceof Circle = " + (p instanceof Circle) );
 console.log( "c instanceof Point = " + (c instanceof Point) );
 
 
-document.writeln( "Ellipse e = " + e );
-document.writeln( "e's area = " + e.area() );
+//document.writeln( "Ellipse e = " + e );
+//document.writeln( "e's area = " + e.area() );
 console.log( Object.getPrototypeOf(e) );
 console.log( "e instanceof Ellipse = " + (e instanceof Ellipse) );
 console.log( "e instanceof Circle = " + (e instanceof Circle) );

@@ -79,6 +79,6 @@ function MakeCounters(n) {
 
 var m = MakeCounters(10);
 for (var i=0; i<10; i++) {
-	console.log(m[i]);
-        document.writeln("Counter[ " + i + "] = " + m[i].get());
+	//console.log(m[i]);
+        console.log("Counter[ " + i + "] = " + m[i].get());
 }

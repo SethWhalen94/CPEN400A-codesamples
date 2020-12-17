@@ -65,11 +65,12 @@ console.log( m.getValues() );
 function MakeCounters(n) {
 	var counters = [];
 	for (var i=0; i<n; i++) {
-		var val = i;
 		counters[i] = {
-			increment: function() { val++; },
- 			get: function() { return val; },
-			reset: function() { val = i; }
+			val: i,
+			resetVal: i,
+			increment: function() { this.val++; },
+ 			get: function() { return this.val; },
+			reset: function() { this.val = this.resetVal; }
 		}
 	}
 	return counters;
@@ -77,7 +78,7 @@ function MakeCounters(n) {
 
 var m = MakeCounters(10);
 for (var i=0; i<10; i++) {
-	console.log(m[i]);
-        document.writeln("Counter[ " + i + "] = " + m[i].get());
+	//console.log(m[i]);
+        console.log("Counter[ " + i + "] = " + m[i].get());
 }
 	

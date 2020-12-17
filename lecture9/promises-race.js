@@ -3,10 +3,14 @@
 function valuePromise(value) {
 	console.log("Creating valuePromise " + value);
 	var r = Math.random();
-	var delay = Math.random() * 1000;
+	var delay = Math.random() * 5000;
 	return new Promise( (resolve, reject) => {
-		var func = (r>0.1) ? resolve : reject; 
-		setTimeout( func.bind(null, value), delay );
+		if(r>0.5)
+			setTimeout(resolve, delay, value);
+		else
+			setTimeout(reject, delay, value);
+		//var func = (r>0.5) ? resolve : reject;
+		//setTimeout( func.bind(null, value), delay );
 	});
 };
 

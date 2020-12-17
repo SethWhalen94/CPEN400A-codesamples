@@ -11,7 +11,7 @@ var action = new Promise( (resolve, reject) => {
 			     reject("Error");
 			console.log("Promise executed");
 		}
-		setTimeout( deferred, 1000 );
+		setTimeout( deferred, 10000 );
 		console.log("Exit Executor function");
 	});
 

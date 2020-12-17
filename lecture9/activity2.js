@@ -3,6 +3,14 @@ var fs = require("fs");
 // you can use fs.readFile
 function readFile (filepath){
     // to implement
+	return new Promise((resolve, reject) =>{
+		fs.readFile(filepath, function(err, buff){
+
+			if(err) reject(err);
+
+			resolve(buff);
+		})
+	})
 }
 
 // testing the functionality
